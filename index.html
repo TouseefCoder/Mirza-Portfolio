@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touseef's Portfolio</title>
+    <link rel="icon" href="images/profile-pic (2).png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container nav">
+                <div class="logo">
+                    <h1>MyPortfolio</h1>
+                </div>
+                
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <section id="home" class="home-section">
+                <div class="home-text">
+                    <div class="h2">Welcome to My Portfolio</div>
+                    <p>Hi, I'm <span class="highlight">Umar Touseef</span> And I'm <br> <span id="element" class="highlight"></span></p>
+                    
+                    <a href="#about" class="btn">Learn More</a>
+                </div>
+                <div class="home-image">
+                    <img src="images/—Pngtree—programmer it developer_13520485.png" alt="Profile Picture">
+                </div>
+    </section>
+    
+    <section class="about-section" id="about">
+        <div class="container">
+          <img src="images/profile-pic (2).png" alt="Profile Picture" class="profile-pic">
+          <h2>About Me</h2>
+          <p>Hello! My name is Umar Touseef, and I'm a dedicated web developer and graphic designer. For me, each project represents a new journey where I blend my creativity and technical skills.</p>
+          <button id="toggleBtn">Read More</button>
+          <div id="moreText" class="hidden">
+            <p>I believe that every design tells its own special story, and I aim to create designs that attract viewers and keep them engaged.
+
+                In addition to web development and graphic design, I also enjoy exploring new technology trends and tools to stay updated and provide better services to my clients.</p>
+          </div>
+        </div>
+      </section>
+    
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-container" id="projectsContainer">
+            </div>
+            
+        </div>
+    </section>
+    
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-form-container">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Let's Get in Touch</h3>
+                    <p>If you have any questions, feel free to reach out to me. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                    <ul>
+                        <li>Email: <a href="mailto:umartouseef3333@gmail.com">umartouseef3333@gmail.com</a></li>
+                        <li>Phone: <a href="tel:+1234567890">+922616013797</a></li>
+                        <li>Address: Abadi Rasool Pur Colony District Sahiwal/Punjab/Pakistan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MyPortfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://web.facebook.com/profile.php?id=100091480882488" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/umar-touseef-57070a270/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/TouseefCoder" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/scripts.js"></script>
+    <script src="js/typed.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Graphic Designer', 'Web Designer'],
+          typeSpeed: 50,
+        });
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
